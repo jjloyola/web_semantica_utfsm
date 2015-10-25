@@ -40,7 +40,7 @@
 
     <h2 style="margin-left: 80px;">About me</h2>
 
-    <p property="rdfs:comment" style="margin-left: 80px;">I'm a <span property="rdfs:jobTitle">professor</span> at <span property="rdfs:memberOf rdfa:alumniOf"><span property="rdfs:alternateName" typeof="rdfs:EducationalOrganization" about="http://es.dbpedia.org/resource/Pontificia_Universidad_Católica_de_Chile">PUC Chile</span></span> and I'm teaching the Semantic Web course in <span property="rdfs:affiliation"><span property="rdfs:name" typeof="rdfs:Organization" about="http://es.dbpedia.org/resource/Coursera">Coursera</span></span>.</p>
+    <p property="rdfs:comment" style="margin-left: 80px;">I'm a <span property="rdfs:jobTitle">professor</span> at <span property="rdfs:memberOf rdfa:alumniOf" typeof="rdfs:EducationalOrganization"><span property="rdfs:alternateName" >PUC Chile</span><link href="http://es.dbpedia.org/resource/Pontificia_Universidad_Católica_de_Chile" property="rdfs:sameAs"/></span> and I'm teaching the Semantic Web course in <span property="rdfs:affiliation" typeof="rdfs:Organization"><span property="rdfs:name">Coursera</span><link href="http://es.dbpedia.org/resource/Coursera" property="rdfs:sameAs"/></span>.</p>
 
     <p property="rdfs:comment" style="margin-left: 80px;">I'm interested in Semantic Web technologies, databases and logic.</p>
 
@@ -57,11 +57,13 @@
     <h2 style="margin-left: 80px;">Meet at</h2>
     <ul style="margin-left: 80px;">
         <ul>
-            <li about="http://www.theclinic.cl/bar/" typeof="rdfs:BarOrPub">
+            <li property="rdfs:hasPOS" typeof="rdfs:BarOrPub">
                 <span property="rdfs:legalName">Bar The Clinic</span>, <span property="rdfs:address" typeof="rdfs:PostalAddress"><span property="rdfs:streetAddress">1 PONIENTE 820</span>, <span property="rdfs:addressLocality">Viña del Mar</span></span>
+                <link href="http://www.theclinic.cl/bar/" property="rdfs:sameAs"/>
             </li>
-            <li about="https://www.facebook.com/cafejournal1999" typeof="rdfs:CafeOrCoffeeShop">
+            <li property="rdfs:hasPOS" typeof="rdfs:CafeOrCoffeeShop">
                 <span property="rdfs:legalName">Café Journal</span>, <span property="rdfs:address" typeof="rdfs:PostalAddress"><span property="rdfs:streetAddress">Avenida Agua Santa 4, Esquina Calle Álvarez</span>, <span property="rdfs:addressLocality">Viña del Mar</span></span>
+                <link href="https://www.facebook.com/cafejournal1999" property="rdfs:sameAs"/>
             </li>
         </ul>
     </ul>
